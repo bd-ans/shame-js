@@ -13,7 +13,7 @@ var reloadPage = function() {
 
 nameMsg = prompt(nameMsg);
 
-if (nameMsg === '' || nameMsg === null || nameMsg === undefined) {
+if (nameMsg === '' || nameMsg === null || nameMsg === undefined || nameMsg === ' ' || Number(nameMsg)) {
   alert(`${retryMsg}`);
   reloadPage();
 } else {
@@ -28,7 +28,7 @@ if (nameMsg === '' || nameMsg === null || nameMsg === undefined) {
       reloadPage();
     } else {
       secondQuestion = prompt(secondQuestion);
-      if (secondQuestion === '' || secondQuestion === null || secondQuestion === undefined) {
+      if (secondQuestion === '' || secondQuestion === null || secondQuestion === undefined || isNaN(secondQuestion)) {
         alert(`${retryMsg}`);
         reloadPage();
       } else {
