@@ -5,7 +5,7 @@ var addresQuestion = `Yashash manzilingiz?`;
 var secondQuestion = `Yoshizgiz? (sonda)`;
 var byeMsg = `Javoblar uchun rahmat!`;
 var ignoreMsg = `Siz savollarimizga javob berishni hohlamadingiz (`;
-var retryMsg = `Malumot noto'g'ri kiritildi! Iltimos qaytadan urunib ko'ring!`;
+var retryMsg = `Malumot to'gri kiritilmadi! Iltimos qaytadan urunib ko'ring!`;
 
 var reloadPage = function() {
   setTimeout("location.reload(true);",800); // Reload the page
