@@ -5,13 +5,13 @@ var addresQuestion = `Yashash manzilingiz?`;
 var secondQuestion = `Yoshizgiz? (sonda)`;
 var byeMsg = `Javoblar uchun rahmat!`;
 var ignoreMsg = `Siz savollarimizga javob berishni hohlamadingiz (`;
-var retryMsg = `iltimos ma'lmotlarningizni to'liq kiriting!`;
+var retryMsg = `Malumot noto'g'ri kiritildi! Iltimos qaytadan urunib ko'ring!`;
 
 var reloadPage = function() {
   setTimeout("location.reload(true);",500); // Reload the page
 }
 
-nameMsg = prompt(nameMsg).trim();
+nameMsg = prompt(nameMsg);
 
 if (nameMsg === '' || nameMsg === null || nameMsg === undefined) {
   alert(`${retryMsg}`);
