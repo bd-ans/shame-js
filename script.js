@@ -17,7 +17,7 @@ if (nameMsg === '' || nameMsg === null || nameMsg === undefined) {
   alert(`${retryMsg}`);
   reloadPage();
 } else {
-  alert(welcomeMsg + `, ${nameMsg}`);
+  alert(welcomeMsg + `, ${nameMsg.trim()}`);
   confirmMsg = confirm(confirmMsg);
   if (confirmMsg === false) {
     alert(ignoreMsg);
@@ -32,12 +32,12 @@ if (nameMsg === '' || nameMsg === null || nameMsg === undefined) {
         alert(`${retryMsg}`);
         reloadPage();
       } else {
-      byeMsg = alert(byeMsg + `, ${nameMsg}`);
-      console.log(`Foydalanuvchi ismi: ${nameMsg}
+      byeMsg = alert(byeMsg + `, ${nameMsg.trim()}`);
+      console.log(`Foydalanuvchi ismi: ${nameMsg.trim()}
 
-Foydalanuvchi yashash manzili: ${addresQuestion}
+Foydalanuvchi yashash manzili: ${addresQuestion.trim()}
 
-Foydalanuvchi yoshi: ${secondQuestion}`);
+Foydalanuvchi yoshi: ${secondQuestion.trim()}`);
       }
     }
   }
