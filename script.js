@@ -4,7 +4,7 @@ var confirmMsg = `Savollarimizga javob berishga tayyormisiz?`
 var addresQuestion = `Yashash manzilingiz?`;
 var secondQuestion = `Yoshizgiz? (sonda)`;
 var byeMsg = `Javoblar uchun rahmat!`;
-var ignoreMsg = `Siz savollarimizga javob berishni hohlamadingiz (`;
+var ignoreMsg = `Hohlamasangiz mayli(`;
 var retryMsg = `Malumot to'gri kiritilmadi! Iltimos qaytadan urunib ko'ring!`;
 
 var reloadPage = function() {
