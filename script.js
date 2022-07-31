@@ -571,9 +571,17 @@ editBtn.style.padding = '8px 12px';
 editBtn.style.cursor = 'pointer';
 editBtn.type = 'button';
 editBtn.setAttribute('onclick', 'editBtnClick()');
+editBtn.onmouseover = function() {
+  editBtn.style.boxShadow = '0 0 15px #d6d6d6';
+  editBtn.style.transition = 'all 0.1s ease-in-out';
+}
+editBtn.onmouseleave = function() {
+  editBtn.style.boxShadow = '0 0 7px #d6d6d6';
+  editBtn.style.transition = 'all 0.1s ease-in-out';
+}
 
 function editBtnClick() {
-  setTimeout("location.reload(true);"); // Reload the page
+  setTimeout("location.reload(true);");
 }
 
 var sendBtn = document.createElement('button');
@@ -591,3 +599,11 @@ sendBtn.style.boxShadow = '0 0 7px #d6d6d6';
 sendBtn.style.padding = '8px 12px';
 sendBtn.style.cursor = 'pointer';
 sendBtn.type = 'submit';
+sendBtn.onmouseover = function() {
+  sendBtn.style.boxShadow = '0 0 15px #d6d6d6';
+  sendBtn.style.transition = 'all 0.1s ease-in-out';
+}
+sendBtn.onmouseleave = function() {
+  sendBtn.style.boxShadow = '0 0 7px #d6d6d6';
+  sendBtn.style.transition = 'all 0.1s ease-in-out';
+}
