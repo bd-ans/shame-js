@@ -506,7 +506,7 @@ elFormFirstInnerLeftInputTitle.style.fontWeight = 'normal';
 var elFormFirstInnerLeftInput = document.createElement('input');
 elFormSecondInnerBox.appendChild(elFormFirstInnerLeftInput);
 elFormFirstInnerLeftInput.type = 'text';
-elFormFirstInnerLeftInput.value = `${phoneNumberMsg}`;
+elFormFirstInnerLeftInput.value = `${emailMsg}`;
 elFormFirstInnerLeftInput.style.backgroundColor = 'transparent';
 elFormFirstInnerLeftInput.style.color = '#f4f6f5';
 elFormFirstInnerLeftInput.style.border = 'none';
